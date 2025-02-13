@@ -1,4 +1,4 @@
-s=open('24 (1).txt').readline()
+s=open('24 (1).txt').readline().strip()
 
 mx=-10**20
 K=0
