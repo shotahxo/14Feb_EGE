@@ -1,0 +1,12 @@
+mx=-10**20
+for n in range(1000):
+    a=bin(n)[2:]
+    if len(a)<8:
+        a='0'*(8-len(a))+a
+    a=a[:2]+a[-2:]
+    r=int(a,2)
+    if n<110:
+        if r==7 and n>mx:
+            mx=n
+print(mx)
+# Ответ: 107
