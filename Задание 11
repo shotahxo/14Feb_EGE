@@ -1,0 +1,4 @@
+from math import ceil
+I=ceil(7*250/8)
+print(I)
+# Ответ: 219
