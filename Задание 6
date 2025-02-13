@@ -1,0 +1,25 @@
+from turtle import *
+
+screensize(1000,1000)
+pensize(3)
+tracer(50)
+
+n = 8
+
+down()
+for i in range(10):
+    for j in range(3):
+        forward(10*n)
+        right(90)
+        forward(10*n)
+        right(270)
+    right(90)
+
+up()
+
+for x in range(-100,100):
+    for y in range(-100,100):
+        goto(x*n,y*n)
+        dot(3,'red')
+done()
+# Ответ: 2400
