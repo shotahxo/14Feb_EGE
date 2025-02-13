@@ -20,4 +20,4 @@ for i in range(len(s)):
     if K==5:
         print(s[i])
 print(mx)
-# Ответ: 
+# Ответ: B
