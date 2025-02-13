@@ -1,0 +1,9 @@
+from ipaddress import *
+k=0
+for mask in range(31):
+    ip='203.75.227.102'
+    net = ip_network(f'{ip}/{mask}',0)
+    if str(net)==f'203.75.224.0/{mask}':
+        k+=1
+print(k)
+# Ответ: 4
