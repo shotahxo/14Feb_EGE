@@ -1,0 +1,17 @@
+def f(a,b,c):
+     if a*b>c:
+         return 1
+     else:
+         return 0
+		 
+for A in range(-100,100):
+    f=1
+    for x in range(1,100):
+        for y in range(1,100):
+            if (f(x,y,A+13) or f(28,y,520) or f(x,25,800))==0:
+                f=0
+            else:
+                pass
+    if f==1:
+        print(A)
+# Ответ: -13
