@@ -1,0 +1,27 @@
+a=open('17 (1).txt').readlines()
+for i in range(len(a)):
+	a[i]=s[i].strip()
+	a[i]=int(s[i])
+
+
+mx=-10**20
+mn=10**20
+
+for i in range(len(a)):
+    if a[i]<mn:
+		mn=a[i]
+	if a[i]>mx:
+		mx=a[i]
+sred=(mn+mx)/2
+
+
+k=0
+mx2=-10**20
+for i in range(len(a)//2):
+    l=len(a)
+    if (a[i]<sred and a[l-i-1]>sred) or (a[i]>sred and a[l-i-1]<sred):
+        k+=1
+        mx2=max(mx1, a[i]+a[l-1-i])
+		
+print(k,mx2)
+# Ответ: 2120 14972
