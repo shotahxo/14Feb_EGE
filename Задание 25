@@ -1,0 +1,14 @@
+from fnmatch import fnmatch
+
+for i in range(0,10**13, 519):
+	if fnmatch(str(i),'32*54?123'):
+		lk,rk=(0,0)
+		if len(str(i))%2==0 and str(i).count('0')==0:
+			l=i[:len(str(i))//2]
+			r=i[len(str(i))//2:]
+			for j in range(len(l)):
+				lk+=int(str(l[j])
+			for j in range(len(r)):
+				rk+=int(str(r[j])
+			if l==r:
+				print(i, i//519)
