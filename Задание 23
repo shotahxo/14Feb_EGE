@@ -1,0 +1,28 @@
+def pr(n):
+    k=0
+    for i in range(2,n):
+        if n%i==0:
+            k+=1
+    if k==0:
+        return 1
+    else:
+        return 0
+		
+def bl(n):
+    c=0
+    for i in range(n+1,10000):
+        if pr(i):
+            c=i
+            break
+    return c
+	
+def f(a,b):
+    if a==b:
+        return 1
+    if a>b or a==33:
+        return 0
+    if a<b:
+        return f(a+2,b)+f(bl(a),b)
+		
+print(f(2,14)*f(14,45))
+# Ответ: 881
